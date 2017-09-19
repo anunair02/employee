@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1">
+
+    <servlet>
+        <servlet-name>Servlet</servlet-name>
+        <jsp-file>/Student2.jsp</jsp-file>
+        <servlet-class>com.servlet.MyServlet</servlet-class>
+    </servlet>
+
+
+   
+    <!-- The mapping for the default servlet -->
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/MyServlet</url-pattern>
+    </servlet-mapping>
+ <welcome-file-list>
+        <welcome-file>StudentInfo2.html</welcome-file>
+         
+    </welcome-file-list>
+</web-app>
+</element>
